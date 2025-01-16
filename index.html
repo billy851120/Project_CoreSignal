@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/all.css" />
+  <link rel="stylesheet" href="./node_modules/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="./node_modules/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+     <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
+</head>
+
+<body>
+  <!-- outline_class  oi-b oi-g oi -->
+
+  <nav class="sticky-top main-nav navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="navbar-brand">
+        <a href="./index.html">
+          <img class="logo" src="./material/logo1.png" alt="" />
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+          <li class="nav-item">
+            <a class="nav-link nav-px" aria-current="page" href="#">首頁</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-px" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              教程
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">所有教程</a></li>
+              <li><a class="dropdown-item" href="#">音樂製作教程</a></li>
+              <li><a class="dropdown-item" href="#">FL STUDIO</a></li>
+              <li><a class="dropdown-item" href="#">ABLETON</a></li>
+              <li><a class="dropdown-item" href="#">LOGIC PRO</a></li>
+              <li>
+                <a class="dropdown-item" href="#">從零開始完成歌曲(所有DAW適用)</a>
+              </li>
+              <li><a class="dropdown-item" href="#">優惠組合</a></li>
+              <li><a class="dropdown-item" href="#">免費教程</a></li>
+              <li><a class="dropdown-item" href="#">優電子書</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-px" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              模板
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">LOGIC PRO模板</a></li>
+              <li><a class="dropdown-item" href="#">FL STUDIO模板</a></li>
+              <li><a class="dropdown-item" href="#">ABLETON模板</a></li>
+              <li><a class="dropdown-item" href="#">BITWIG STUDIO模板</a></li>
+              <li><a class="dropdown-item" href="#">CUBASE模板</a></li>
+              <li><a class="dropdown-item" href="#">MASCHINE STUDIO模板</a></li>
+              <li><a class="dropdown-item" href="#">STUDIO ONE模板</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-px" href="#" id="navbarScrollingDropdown2" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              取樣包
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown2">
+              <li>
+                <a class="dropdown-item" href="#">取樣包(SAMPLE PACK)</a>
+              </li>
+              <li><a class="dropdown-item" href="#">預設(PRESET)</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-px" href="#">評論</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-px">幫助</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-px">Blog</a>
+          </li>
+        </ul>
+        <div class="user">
+          <a href="#" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="bi bi-cart-fill user-icon" viewBox="0 0 16 16">
+            <path
+            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+          </svg>
+        </a>
+          <button class="sign-up-btn btn mx-2 btn-outline-success">
+            登入
+          </button>
+          <button class="btn btn-outline-success">註冊</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container-xl main-banner-content">
+    <div class="main-banner">
+      <div class="row animate__animated animate__fadeIn">
+        <div class="col-xl-6 col-12 banner-text">
+          <div class="text-wrap ">
+
+            <h1>聲音旅程﹐就此展開</h1>
+            <p>
+              在這裡你能夠學習到不同的音頻製作技術，無論是製作音軌、混音、聲音設計、音樂理論等等。深入淺出一步步理解歌曲結構，與製作過程。
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-12 d-flex justify-content-center">
+          <div class="banner-img ">
+            <img src="./material/hyperbits-2d-laptop-animatio-color-256-1.gif" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-xl d-flex justify-content-center blog_banner animate__animated animate__fadeIn">
+    <div class="tutorial_banner ">
+      <div class="row tutorial_banner_title">
+        <div class="col-xl-6 col-12  tutorial_banner_title_left">
+          <h6>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+              </svg>
+            </span>
+            閱讀 & 學習
+          </h6>
+          <p>電子音樂製作人的最佳指南和文章，無論您製作哪種類型的曲風。</p>
+        </div>
+        <div class="col-xl-6 col-12  tutorial_banner_title_right">
+          <a href="#">
+            瀏覽Blog<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg>
+            <path fill-rule="evenodd"
+              d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+            </svg>
+          </a>
+        </div>
+        <div class="row blog_item_box">
+
+          <div class="row ">
+            <div class="col-xl-6 col-12   " id="blog_item">
+              <div class="item_img">
+
+                <img src="./material/blog_img01.png" alt="">
+              </div>
+              <div class="text">
+                <h5>聲音設計基礎：開始使用 3 Rs</h5>
+                <p>聲音設計使音樂製作變得有趣。這可能就是為什麼你選擇追求生產而不是......</p>
+              </div>
+              <div class="d-grid gap-2 text-btn">
+                <button type="button" class="btn btn-outline-primary">更多</button>
+              </div>
+            </div>
+            <div class="col-xl-6 col-12   " id="blog_item">
+              <div class="item_img">
+
+                <img src="./material/blog_img02.png" alt="">
+              </div>
+              <div class="text">
+                <h5>聲音設計基礎：開始使用 3 Rs</h5>
+                <p>聲音設計使音樂製作變得有趣。這可能就是為什麼你選擇追求生產而不是......</p>
+              </div>
+              <div class="d-grid gap-2 text-btn">
+                <button type="button" class="btn btn-outline-primary">更多</button>
+              </div>
+            </div>
+            <div class="col-xl-6 col-12   " id="blog_item">
+              <div class="item_img">
+
+                <img src="./material/blog_img03.png" alt="">
+              </div>
+              <div class="text">
+                <h5>聲音設計基礎：開始使用 3 Rs</h5>
+                <p>聲音設計使音樂製作變得有趣。這可能就是為什麼你選擇追求生產而不是......</p>
+              </div>
+              <div class="d-grid gap-2 text-btn">
+                <button type="button" class="btn btn-outline-primary">更多</button>
+              </div>
+            </div>
+            <div class="col-xl-6 col-12   " id="blog_item">
+              <div class="item_img">
+
+                <img src="./material/blog_img04.png" alt="">
+              </div>
+              <div class="text">
+                <h5>聲音設計基礎：開始使用 3 Rs</h5>
+                <p>聲音設計使音樂製作變得有趣。這可能就是為什麼你選擇追求生產而不是......</p>
+              </div>
+              <div class="d-grid gap-2 text-btn">
+                <button type="button" class="btn btn-outline-primary">更多</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid  why_content overflow-hidden">
+    <div class="why_banner animate__animated animate__fadeIn">
+      <div class="row why_top ">
+        <div class="col-12  ">
+          <div class="why_top_item">
+            <h1>為什麼你需要加入我們</h1>
+            <p>編曲、混音、母帶不知道上哪學?</p>
+          </div>
+        </div>
+      </div>
+      <div class="row gx-2 why_down ">
+        <div class="col-xl col-5  why_down_item">
+          <div class="item_wrap ">
+            <div class="icon">
+              <img src="./material/svg/Artboard_10.svg" alt="">
+            </div>
+            <div class="why_text">
+              <p>來自華人各地，帶領你從宅路變專家</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl col-5  why_down_item">
+          <div class="item_wrap ">
+            <div class="icon">
+              <img src="./material/svg/Artboard_15.svg" alt="">
+            </div>
+            <div class="why_text">
+              <p>來自華人各地，帶領你從宅路變專家</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl col-5  why_down_item">
+          <div class="item_wrap ">
+            <div class="icon">
+              <img src="./material/svg/Artboard_13.svg" alt="">
+            </div>
+            <div class="why_text">
+              <p>來自華人各地，帶領你從宅路變專家</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl col-5  why_down_item">
+          <div class="item_wrap ">
+            <div class="icon">
+              <img src="./material/svg/Artboard_12.svg" alt="">
+            </div>
+            <div class="why_text">
+              <p>來自華人各地，帶領你從宅路變專家</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid tem_container animate__animated animate__fadeIn">
+    <div class="tem_banner ">
+      <div class="row row-cols-7 tem_ch ">
+        <div  class="col  tem_wrap ">
+
+          <div   data-inde="0" class="tem_ch_item logic-logo">
+            <a  >
+              <img src="./material/logo/logo08.png"  alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col  tem_wrap ">
+          <div class="tem_ch_item"  data-inde="1">
+            <a >
+              <img src="./material/logo/logo02.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col  tem_wrap fl-logo ">
+          <div class="tem_ch_item" data-inde="2">
+            <a >
+              <img src="./material/logo/logo03_2.png"  alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col  tem_wrap ">
+          <div class="tem_ch_item" data-inde="3">
+            <a >
+              <img src="./material/logo/logo04.png"  alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col  tem_wrap ">
+          <div class="tem_ch_item" data-inde="4">
+            <a >
+              <img src="./material/logo/logo05.png"  alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col  tem_wrap ">
+          <div class="tem_ch_item" data-inde="5">
+            <a >
+              <img src="./material/logo/logo06.png"  alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col  tem_wrap ">
+          <div class="tem_ch_item" data-inde="6">
+            <a >
+              <img src="./material/logo/logo07.png"  alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row tem_ch_txt">
+        <div class="col">
+          <div class="txt">
+            <p>
+              我們公司讓您有機會使用我們為您喜愛的 DAW 提供的免費模板來檢查我們產品的最高質量。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col ch-content">
+          <div class="item ">
+              <img class="ch-ch animate__animated "  src="./material/tem_content/logic.jpg" alt="">
+              <img class="ch-ch animate__animated "  src="./material/tem_content/Maschine_Studio.jpg" alt="">
+              <img class="ch-ch animate__animated "  src="./material/tem_content/FL-Studio.png" alt="">
+              <img class="ch-ch animate__animated "  src="./material/tem_content/cubase.jpg" alt="">
+              <img class="ch-ch animate__animated "  src="./material/tem_content/Live.png" alt="">
+              <img class="ch-ch animate__animated " src="./material/tem_content/Bitwig.png" alt="">
+              <img class="ch-ch animate__animated " src="./material/tem_content/Studio-One.png" alt="">
+              <!-- <img src="" alt=""> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container-fluid love_content">
+    <div class="love_box ">
+      <div class="row love_wrap">
+        <div class="col d-flex justify-content-xl-end align-self-center">
+          <div class="imgbox">
+            <img src="./material/love001.png" alt="">
+          </div>
+        </div>
+        <div class="col-6 main-content ">
+          <div class="icon ">
+            <img src="./material/love_pic.png" alt="">
+          </div>
+          <div class="txt ">
+            <h1>
+              來自全球華人 <span class="text-primary">2,000</span>  位以上的學員的愛
+            </h1>
+            <p>看看我們的學員們都說了什麼</p>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-xl-start align-self-center">
+          <div class="imgbox">
+            <img src="./material/love001.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="tech-content animate__animated animate__fadeIn">
+      <div class="row content-t justify-content-start gx-xl-5">
+        <div class="col-xl-6 col-12 d-flex justify-content-center justify-content-xl-end pe-xl-5 ">
+          <div class="content-t_l d-flex justify-content-center align-items-center ">
+            <img src="./material/pngwing.com (1).png" alt="">
+          </div>
+        </div>
+        <div class="col-xl-6 col-12 d-flex justify-content-xl-start justify-content-center align-items-center ">
+          <div class="content-t_r ">
+            <div class="title">
+              <h1>
+                成為講師
+              </h1>
+            </div>
+            <div class="txt">
+              <p>在這裡，有來自世界各地的講師為數百萬名學生講授課程。我們為您準備各種工具與技能，助您教授您所熱愛的事物。</p>
+            </div>
+            <button type="button" class="btn btn-dark">立即開始教學</button>
+          </div>
+        </div>
+      </div>
+      <div class="row content-m justify-content-start gx-xl-5">
+
+        <div class="col-12  align-items-center">
+          <div class="content-m-item">
+            <div class="title">
+              <h4>受到各種規模的公司信賴</h4>
+            </div>
+
+            <div class="logo">
+              <div class="box">
+                <img class="sup-img-1" src="./material/sup/01-removebg-preview.png" alt="">
+              </div>
+              <div class="box">
+                <img class="sup-img-2" src="./material/sup/02-removebg-preview.png" alt="">
+              </div>
+              <div class="box">
+                <img class="sup-img-3" src="./material/sup/03-removebg-preview.png" alt="">
+              </div>
+              <div class="box">
+                <img class="sup-img-4" src="./material/sup/04-removebg-preview.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row content-b justify-content-start gx-xl-5">
+        <div class="col-xl-6 col-12 order-xl-1 d-flex justify-content-center justify-content-xl-start align-items-center ">
+          <div class="content-b_l d-flex justify-content-center">
+            <img src="./material/pngwing.com.png" alt="">
+          </div>
+        </div>
+        <div class="col-xl-6 col-12 d-flex justify-content-center justify-content-xl-end align-items-center ">
+          <div class="content-b_r  order-xl-1">
+            <div class="title">
+              <h1>
+                商業
+              </h1>
+            </div>
+            <div class="txt">
+              <p>讓您的團隊無限存取15000門以上的 Udemy 熱門課程。學習及提升商業、科技、設計...等技能。</p>
+            </div>
+            <button type="button" class="btn btn-dark">立即開始商業</button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row content-b justify-content-start gx-xl-5">
+        <div class="col-xl-6 col-12 d-flex justify-content-center justify-content-xl-end align-items-center pe-xl-5 ">
+          <div class="content-b_l d-flex ant justify-content-center">
+            <img src="./material/pngwing.com3.png" alt="">
+          </div>
+        </div>
+        <div class="col-xl-6 col-12 d-flex justify-content-xl-start justify-content-center align-items-center ">
+          <div class="content-b_r order-xl-1">
+            <div class="title">
+              <h1>
+                教育，改變您的生活
+              </h1>
+            </div>
+            <div class="txt">
+              <p>全世界的學習者紛紛開啟了新的職涯、在自己的領域中更上一層樓，擁有更豐富美好的生活。</p>
+            </div>
+            <button type="button" class="btn btn-dark">瞭解方法</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container-fluid ">
+      <div class="footer_content">
+        <div class="row ">
+          <div class="col-xl col-4 align-self-end">
+            <div class="logo">
+              <img src="./material/logo3.png" alt="">
+            </div>
+          </div>
+          <div class="col-xl-4 col-8 order-xl-1 align-self-center">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+          <div class="col-xl-6 col-12  footer_link">
+            <div class="box">
+
+              <table class="table">
+                
+              <tbody>
+                <tr>
+                  <td><a href="#">工作流程和創造力</a></td>
+                  <td><a href="#">編曲與作曲</a></td>
+                  <td><a href="#">混音和母帶</a></td>
+                </tr>
+                <td><a href="#">電音基礎</a></td>
+                <td><a href="#">為製作人創作歌曲</a></td>
+                <td><a href="#">聲音設計</a></td>
+              </tr>
+              <td><a href="#">Beats設計</a></td>
+              <td><a href="#">幫生產者混音</a></td>
+              <td><a href="#">一般的</a></td>
+            </tr>
+                <td><a href="#">資源</a></td>
+                <td><a href="#">Blog</a></td>
+                <td><a href="#">臉書社區</a></td>
+              </tr>
+              <td><a href="#">模板</a></td>
+                <td><a href="#">預設</a></td>
+                <td><a href="#">隱私政策</a></td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <!-- <script src="jquery.min.js"></script> -->
+  <script src="./node_modules/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+  <script src="./JS/all.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

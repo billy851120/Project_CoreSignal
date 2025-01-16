@@ -1,0 +1,74 @@
+@media (min-width: 1200px) {
+    .banner-img {
+
+        width: 363px;
+        height: 271px;
+    }
+
+    .banner-text h1::after {
+        content: '。';
+        top: 0.3em;
+        left: 9.2em;
+        position: absolute;
+        font-weight: 400;
+        font-size: 36px;
+        /* identical to box height, or 0% */
+
+        letter-spacing: 0.05em;
+
+        color: #000000;
+    }
+
+    .banner-text {
+        // margin-left: 6.8em;
+        margin-top: 2.3em;
+        // padding-right: 24.3em;
+    }
+
+    .banner-text h1 {
+        font-weight: 400;
+        font-size: 36px;
+        /* identical to box height, or 0% */
+
+        letter-spacing: 0.05em;
+
+        color: #000000;
+        position: relative;
+    }
+
+    .main-banner {
+        max-width: 970px;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0 auto 50px auto;
+        padding-top: 72px;
+    }
+
+    .blog_item_box {
+        padding: 1.4em 0em;
+    }
+
+    .why_down_item .icon {
+        max-width: 120px;
+        width: 100%;
+        padding: 0em 0em;
+        margin: 0px auto 29px auto;
+    }
+
+    .why_down_item:hover {
+        -webkit-box-shadow: 5px 5px 5px #000;
+        box-shadow: 0px 0px 60px rgba($color: #ccc, $alpha: 0.3);
+        transition: .3s;
+    }
+.dropdown-menu li:hover .sub-menu {visibility: visible;}
+.dropdown:hover .dropdown-menu {display: block;}
+
+}
